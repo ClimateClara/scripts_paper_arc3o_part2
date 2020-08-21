@@ -77,8 +77,7 @@ Further analysis and Figures
 The final analysis and visualization was done using the following scripts:
 	
 	* Figure 2: `Figure_2.ipynb </scripts_figures/Figure_2.ipynb>`_
-	* infer the atmospheric influence for the correction of the summer TB: `infer_atmospheric_influence.ipynb </scripts_figures/infer_atmospheric_influence.ipynb>`_ and 
-		`infer_atmos_influence_analysis.sh </scripts_figures/infer_atmos_influence_analysis.sh>`_
+	* infer the atmospheric influence for the correction of the summer TB: `infer_atmospheric_influence.ipynb </scripts_figures/infer_atmospheric_influence.ipynb>`_ and `infer_atmos_influence_analysis.sh </scripts_figures/infer_atmos_influence_analysis.sh>`_
 	* Figure 4 and key figure (on The Cryosphere webpage): `Figure_Key_and_4.ipynb </scripts_figures/Figure_Key_and_4.ipynb>`_ 
 	* Figure 5, Table 1, and Figure B1: `Figures_B1_5_Table_1.ipynb </scripts_figures/Figures_B1_5_Table_1.ipynb>`_
 	* Figures 6 and 8:  `Figures_6_8.ipynb.ipynb </scripts_figures/Figures_6_8.ipynb>`_
