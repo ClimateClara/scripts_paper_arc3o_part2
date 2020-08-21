@@ -1,4 +1,4 @@
-Scripts used to produce the data and figures for the ARC3O Part 1
+Scripts used to produce the data and figures for the ARC3O Part 2
 =================================================================
 
 What's this?
@@ -17,19 +17,21 @@ up-to-date ARC3O-version.
 Data
 ----
 
-MPI-ESM assimilation runs
-- TODO - Data on Archive: WORK_DATA folder
-
-WORK_DATA: add AMSR data, add assim_MPI-ESM-LR.nc
+All data can be downloaded from the DKRZ archive, see `Data_explanations_and_archive.rst <Data_explanations_and_archive.rst>`_.
 
 Model data
 ##########
 
-The simulated brightness temperatures were computed by applying the version of ARC3O given in the folder `/arc3o </arc3o/>`_ to the output of the three 
+MPI-ESM assimilation runs can be downloaded from the DKRZ archive, see `Data_explanations_and_archive.rst <Data_explanations_and_archive.rst>`_.
+
+Simulation data
+###############
+
+The simulated brightness temperatures were computed by applying the version of ARC3O given in the folder `arc3o <./arc3o/>`_ to the output of the three 
 different MPI-ESM assimilation runs:
-	* SICCI2: `run_arc3o_SICCI.ipynb </scripts_simulation/run_arc3o_SICCI.ipynb>`_
-	* Bootstrap: `run_arc3o_Bootstrap.ipynb </scripts_simulation/run_arc3o_Bootstrap.ipynb>`_
-	* NASA Team: `run_arc3o_NASATeam.ipynb </scripts_simulation/run_arc3o_NASATeam.ipynb>`_
+	* SICCI2: `run_arc3o_SICCI.ipynb <./scripts_simulation/run_arc3o_SICCI.ipynb>`_
+	* Bootstrap: `run_arc3o_Bootstrap.ipynb <./scripts_simulation/run_arc3o_Bootstrap.ipynb>`_
+	* NASA Team: `run_arc3o_NASATeam.ipynb <./scripts_simulation/run_arc3o_NASATeam.ipynb>`_
 
 As the results are written out as monthly files, you can merge them using `cdo  <https://code.mpimet.mpg.de/projects/cdo/wiki/Cdo#Documentation>`_
 as follows:
@@ -47,7 +49,7 @@ merged and remapped to the MPI-ESM grid with the script `rearrange_AMSR_data.sh 
 
 The Round Robin Data Package used in Sec. 3.1.4 was downloaded from https://doi.org/10.6084/m9.figshare.6626549.v6.
 
-The sea-ice concentration products used in `Figure6.ipynb </scripts_figures/Figure6.ipynb>`_ were downloaded 
+The sea-ice concentration products used in `Figures_6_8.ipynb.ipynb </scripts_figures/Figures_6_8.ipynb.ipynb>`_ were downloaded 
 from `NSIDC <ftp://sidads.colorado.edu/pub/DATASETS/NOAA/G02202_V3/north/daily/>`_ (Bootstrap and NASA Team) and
 `ESA CCI project <http://dx.doi.org/10.5285/5f75fcb0c58740d99b07953797bc041e>`_. The data were merged, remapped to the
 MPI-ESM grid, and the pole hole cut out using `cdo  <https://code.mpimet.mpg.de/projects/cdo/wiki/Cdo#Documentation>`_.
@@ -84,4 +86,4 @@ The final analysis and visualization was done using the following scripts:
 	* Figure A1: `Figure_A1.ipynb </scripts_figures/Figure_A1.ipynb>`_ 
 	* Figure 9: data prepared with experiment_meltpondfraction0.ipynb </scripts_figures/experiment_meltpondfraction0.ipynb>`_ and mpf0_prepare_files.sh </scripts_figures/experiment_meltpondfraction0.ipynb>`_, then plotted with `Figure_9.ipynb </scripts_figures/Figure_9.ipynb>`_
 
-Signed: Clara Burgard, 17.08.2020
+Signed: Clara Burgard, 21.08.2020
