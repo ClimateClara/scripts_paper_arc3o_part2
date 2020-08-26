@@ -2,9 +2,9 @@
 
 ############################
 path1=/work/mh0033/m300411/SatSim/WORK_DATA/assimilation_runs/assim_SICCI2_50km_mergetime
-#path2=/work/mh0033/m300411/SatSim/WORK_DATA/simulated_TBs/20200603-2009 #SICCI2 ensstd
-#path2=/work/mh0033/m300411/SatSim/WORK_DATA/simulated_TBs/20200604-0904 #Bootstrap ensstd
-path2=/work/mh0033/m300411/SatSim/WORK_DATA/simulated_TBs/20200604-0918 #NASATeam ensstd
+#path2=/work/mh0033/m300411/SatSim/WORK_DATA/simulated_TBs/20200603-2009 #SICCI2 
+#path2=/work/mh0033/m300411/SatSim/WORK_DATA/simulated_TBs/20200604-0904 #Bootstrap 
+path2=/work/mh0033/m300411/SatSim/WORK_DATA/simulated_TBs/20200604-0918 #NASATeam 
 ############################
 
 mon=March # or October
