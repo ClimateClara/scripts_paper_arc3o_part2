@@ -17,12 +17,12 @@ up-to-date ARC3O-version.
 Data
 ----
 
-All data can be downloaded from the DKRZ archive, see `Data_explanations_and_archive.rst <Data_explanations_and_archive.rst>`_.
+All following data and the corresponding documentation can be downloaded from the `DKRZ long term archive <https://cera-www.dkrz.de/WDCC/ui/cerasearch/entry?acronym=DKRZ_LTA_033_ds00006>`_.
 
 Model data
 ##########
 
-MPI-ESM assimilation runs can be downloaded from the DKRZ archive, see `Data_explanations_and_archive.rst <Data_explanations_and_archive.rst>`_.
+The ECHAM output needed for the brightness temperature simulation, from assimilation runs conducted by F. Bunzel for `Bunzel et al. (2016) <https://doi.org/10.1002/2015GL066928>`_ can be found in the folder *assimilation_runs.tar.gz* in the `DKRZ long term archive <https://cera-www.dkrz.de/WDCC/ui/cerasearch/entry?acronym=DKRZ_LTA_033_ds00006>`_.
 
 Simulation data
 ###############
@@ -40,6 +40,8 @@ as follows:
 	
 	mkdir mergetime
 	cdo mergetime TBtot* ./mergetime/TBtot_assim_2003-2008_7.nc
+	
+The output data can be found in the folder *simulated_TBs.tar.gz* in the `DKRZ long term archive <https://cera-www.dkrz.de/WDCC/ui/cerasearch/entry?acronym=DKRZ_LTA_033_ds00006>`_.
 
 Observation data
 ################
@@ -60,6 +62,9 @@ as follows:
 .. code-block:: bash
 	
 	cdo sellonlatbox,0,360,45,87.2 infile.nc infile_hole.nc
+	
+The formatted observational data can be found in the folder *observations.tar.gz* in the `DKRZ long term archive <https://cera-www.dkrz.de/WDCC/ui/cerasearch/entry?acronym=DKRZ_LTA_033_ds00006>`_.
+
 
 Sensitivity study (see Sec. 4.3.2 of the paper)
 -----------------------------------------------
@@ -72,7 +77,7 @@ processed to prepare the results displayed in Figure 5 and Table 1 with the scri
 
 
 Further analysis and Figures
---------------------
+----------------------------
 
 The final analysis and visualization was done using the following scripts:
 	
@@ -85,4 +90,4 @@ The final analysis and visualization was done using the following scripts:
 	* Figure A1: `Figure_A1.ipynb </scripts_figures/Figure_A1.ipynb>`_ 
 	* Figure 9: data prepared with `experiment_meltpondfraction0.ipynb </scripts_figures/experiment_meltpondfraction0.ipynb>`_ and `mpf0_prepare_files.sh </scripts_figures/experiment_meltpondfraction0.ipynb>`_, then plotted with `Figure_9.ipynb </scripts_figures/Figure_9.ipynb>`_
 
-Signed: Clara Burgard, 21.08.2020
+Signed: Clara Burgard, 02.09.2020
